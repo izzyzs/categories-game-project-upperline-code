@@ -17,6 +17,10 @@ class ApplicationController < Sinatra::Base
     return erb :index
   end
   
+  get '/How_to_play.erb' do
+    return erb :how_to_play
+  end
+  
   post '/results' do
      
      @category = params["categories"]
