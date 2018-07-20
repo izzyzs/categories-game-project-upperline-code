@@ -128,7 +128,18 @@ $theCategories = {
 	"Thor: Ragnarok",
 	"Black Panther ",
 	"Avengers: Infinity War" ,
-	"Ant-Man and the Wasp" ]
+	"Ant-Man and the Wasp" ], 
+	
+	"Planets_of_the_Solar_System" => [
+	    "Mercury",
+        "Venus",
+        "Earth",
+        "Mars",
+        "Pluto ",
+        "Jupiter",
+        "Uranus",
+        "Neptune"
+	    ]
 }
 
 
