@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Categories</a>
+                
+            </div>
+        </nav>
+        
+        <h1><%=@does_it_belong%></h1>
+        <%=@chosenCategory%>
+        
+        <form class="" action="/reresults" method="POST">
+            <label for="answer">
+                Write a word that belongs from the category <%=@category%>.
+            </label>
+            <input type="text" name="playerAnswer" />
+            <input name="categories" type="hidden" value="<%=@category%>">
+            <input name="string" type="hidden" value="<%=@string%>">
+            <br>
+            <input type="submit" value="submit" />
+                    
+        </form>
+        
+        
+                
+    </body>
+    
+</html>

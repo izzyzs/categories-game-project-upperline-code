@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Categories Game
+        </title>
+            
+            <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+            <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">-->
+    </head>
+    <body>
+        <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Categories</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="How_to_play.erb">How to play!</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+     
+        <p>Welcome to Categories!</p>
+        <br/>
+        <p>Choose the category you want:</p>
+        <p>You can pick from the drop down list</p>
+            <form action="/results" method="POST">
+                <div class="input-field col s12">
+                    <select name="categories">
+                        <option value="" >Choose your option</option>
+                        <option value="States">States</option>
+                        <option value="Presidents">Presidents</option>
+                        <option value="ArabianPeninsulaCountries">Countries in the Arabian Peninsula</option>
+                        <option value="MCU_Movies">MCU Movies</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="submit" />
+                </div>
+            </form>
+            
+            <%=@chosenCategory%>
+            
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            <script>
+                //   document.addEventListener('DOMContentLoaded', function() {
+                //     var elems = document.querySelectorAll('select');
+                //     var instances = M.FormSelect.init(elems, options);
+                //   });
+            </script>
+    </body>
+</html>
